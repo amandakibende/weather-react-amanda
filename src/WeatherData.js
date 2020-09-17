@@ -12,23 +12,22 @@ export default function WeatherData(props) {
           {" "}
           <GetDate date={props.data.date} />
         </li>
-        <li>{props.data.description}</li>
       </ul>
       <div className="row mt-3">
         <div className="col-6">
           <div className="clearfix">
             <div className="float-left">
               <AnimatedIcon code={props.data.icon} />
-            </div>
-
-            <div className="float-left">
               <ConverUnit celsius={props.data.temperature} />
             </div>
+
+            <div className="col"></div>
           </div>
         </div>
 
         <div className="col-6">
           <ul>
+            <li>Description: {props.data.description}</li>
             <li>Humidity: {Math.round(props.data.humidity)} %</li>
             <li>Wind: {Math.round(props.data.wind)} km/h</li>
           </ul>

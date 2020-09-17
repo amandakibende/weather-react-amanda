@@ -4,7 +4,7 @@
   display: block;
   margin: 30px auto;
   border: 2px solid #000000;
-  background: url(./cloud.jpg);
+  background: url(./clouds.jpg);
   border-radius: 7px;
   background-size: cover;
   font-family: "Raleway", sans-serif;
@@ -57,4 +57,9 @@ canvas {
   position: relative;
   line-height: 1;
   top: -34px;
+}
+
+.weather-temperature {
+  font-size: 18px;
+  display: inline;
 }

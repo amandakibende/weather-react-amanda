@@ -9,11 +9,11 @@ export default function App() {
       </div>
       <small>
         <a
-          href="https://codesandbox.io/s/meteo-react-2wl1m?file=/src/App.js"
+          href="https://github.com/amandakibende/amanda_amanda_weather"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Codesandbox source
+          Open source
         </a>{" "}
         by{" "}
         <a

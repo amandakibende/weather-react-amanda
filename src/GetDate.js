@@ -2,13 +2,13 @@ import React from "react";
 
 export default function GetDate(props) {
   let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
+    "Sunday ",
+    "Monday ",
+    "Tuesday ",
+    "Wednesday ",
+    "Thursday ",
+    "Friday ",
+    "Saturday "
   ];
 
   let day = days[props.date.getDay()];
@@ -23,7 +23,6 @@ export default function GetDate(props) {
   }
   return (
     <div>
-      {""}
       {day}
       {""}
       {hours}:{minutes}

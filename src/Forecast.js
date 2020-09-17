@@ -8,24 +8,26 @@ export default function Forecast(props) {
   const [forecast, setForecast] = useState(null);
 
   function DisplayForecast(response) {
-    setLoaded(true);
     setForecast(response.data);
+    setLoaded(true);
   }
 
   if (loaded) {
     return (
-      <div className="weather-forecast row">
-        <PreviewForecast data={forecast.list[0]} />
-        <PreviewForecast data={forecast.list[1]} />
-        <PreviewForecast data={forecast.list[2]} />
-        <PreviewForecast data={forecast.list[3]} />
-        <PreviewForecast data={forecast.list[4]} />
-        <PreviewForecast data={forecast.list[5]} />
+      <div className="weather-forecast">
+        <div className="row">
+          <PreviewForecast data={forecast.list[0]} />
+          <PreviewForecast data={forecast.list[1]} />
+          <PreviewForecast data={forecast.list[2]} />
+          <PreviewForecast data={forecast.list[3]} />
+          <PreviewForecast data={forecast.list[4]} />
+          <PreviewForecast data={forecast.list[5]} />
+        </div>
       </div>
     );
   } else {
     let key = "b8ff265fd38bbab1d6be0d9dd9df4fc7";
-    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.data}&appid=${key}&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${key}&units=metric`;
     axios.get(url).then(DisplayForecast);
 
     return null;
