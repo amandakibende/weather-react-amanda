@@ -9,7 +9,7 @@ export default function App() {
       </div>
       <small>
         <a
-          href="https://github.com/amandakibende/amanda_amanda_weather"
+          href="https://github.com/amandakibende/weather-react-amanda"
           target="_blank"
           rel="noopener noreferrer"
         >
